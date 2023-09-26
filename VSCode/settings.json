@@ -1,0 +1,158 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+
+    "workbench.editor.splitOnDragAndDrop": false,
+    "workbench.tree.indent": 16,
+
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/__pycache__": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/bower_components": true,
+        "**/.bloop": true,
+        "**/.metals": true
+    },
+    "search.exclude": {
+        "**/.venv": true,
+        "**/node_modules": true
+    },
+
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [120],
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
+    "editor.autoClosingBrackets": "never",
+    "editor.defaultFormatter": null,
+    "editor.dragAndDrop": false,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.inlayHints.enabled": "offUnlessPressed",
+
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": true,
+
+    "debug.autoExpandLazyVariables": true,
+
+    "java.codeGeneration.generateComments": true,
+    "java.codeGeneration.hashCodeEquals.useInstanceof": true,
+    "java.codeGeneration.hashCodeEquals.useJava7Objects": true,
+    "java.saveActions.organizeImports": true,
+    "java.dependency.packagePresentation": "hierarchical",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.jdt.ls.vmargs": "-Xmx8G",
+    "java.debug.settings.showHex": false,
+    "java.debug.settings.showQualifiedNames": false,
+    "java.debug.settings.showStaticVariables": false,
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit",
+            "source.addMissingImports": "explicit"
+        }
+    },
+
+    "python.terminal.activateEnvironment": false,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.testing.pytestEnabled": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "black-formatter.args": ["--line-length", "120"],
+    "pylint.args": [
+        "--max-line-length=120",
+        "--disable=C0103",
+        "--disable=C0111",
+        "--disable=C0206",
+        "--disable=C3001",
+        "--disable=R0914",
+        "--disable=W0702",
+        "--disable=W0718",
+        "--disable=W0719",
+        "--disable=W0621",
+        "--disable=W1203"
+    ],
+    "isort.args": ["--profile", "black"],
+
+    "prettier.tabWidth": 4,
+    "prettier.printWidth": 120,
+    "prettier.htmlWhitespaceSensitivity": "ignore",
+
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    "evenBetterToml.formatter.columnWidth": 120,
+    "evenBetterToml.formatter.indentEntries": true,
+    "evenBetterToml.formatter.indentTables": true,
+    "evenBetterToml.formatter.trailingNewline": false,
+    "evenBetterToml.formatter.reorderKeys": true,
+    "evenBetterToml.formatter.reorderArrays": true,
+    "evenBetterToml.formatter.inlineTableExpand": true,
+    "evenBetterToml.formatter.allowedBlankLines": 1,
+    "[toml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    "git.allowForcePush": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.confirmForcePush": false,
+    "git.openRepositoryInParentFolders": "never",
+
+    "git-graph.repository.fetchAndPrune": true,
+    "git-graph.repository.fetchAndPruneTags": true,
+    "git-graph.dialog.fetchRemote.prune": true,
+    "git-graph.dialog.fetchRemote.pruneTags": true,
+
+    "github.gitProtocol": "ssh",
+    "redhat.telemetry.enabled": false
+}
