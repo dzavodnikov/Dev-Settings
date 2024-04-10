@@ -49,3 +49,11 @@ $ git config --global user.email "<EMAIL>"
 
 > Be sure that you are clone your repository using SSH, not HTTPS!
 > You are can check it in `<REPOSITORY>/.git/config` file, `[remote "origin"]` section, `url` field.
+
+## Repository configuration
+
+Any repository or subfolder can contain `.gitignore` file. Just add it to proper folder:
+
+```sh
+    $ cp Git/_.gitignore  ~/Git/MyRepo/.gitignore
+```
